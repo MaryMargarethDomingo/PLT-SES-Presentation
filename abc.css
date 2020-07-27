@@ -1,0 +1,370 @@
+/*RESPONSIVE*/
+viewport{
+  zoom:1.0;
+  width: extend-to-zoom;
+}
+/*Laptop*/
+@media screen and (max-width:768px) {
+    #container { width:100%;}
+
+}
+/*Tablet*/
+@media screen and (max-width: 600px) {
+    #container {
+      width:100%;
+    }
+}
+.container{
+  height:100%;
+  width: 100%;
+}
+/*PLT*/
+.container1{
+  height:auto;
+  width: 60%;
+  border: 5px solid white;
+}
+.headlinePLT{
+  color: #7766A9;
+  font-size: 10vw;
+  line-height: 10vw;
+  margin-left: 10vw;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+}
+/*PLT-Animation*/
+@keyframes topLeft {
+  0% {
+    opacity: 2;
+    transform: translate3d(0,0,0);
+    font-size: 10vw;
+    line-height: 8vw;
+}
+25% {
+  opacity: 1;
+  transform: translate3d(0px,5px,0);
+  font-size: 4vw;
+  line-height: 4vw;
+}
+50% {
+  opacity: 1;
+  transform: translate3d(0px,5px,0);
+  font-size: 4vw;
+  line-height: 4vw;
+}
+75% {
+  opacity: 1;
+  transform: translate3d(0px,5px,0);
+  font-size: 4vw;
+  line-height: 4vw;
+}
+100% {
+  opacity: 0;
+  transform: translate3d(0px,5px,0);
+  font-size: 4vw;
+  line-height: 4vw;
+  }
+}
+.animate-topLeft {
+  animation-name: topLeft;
+  animation-duration: 2s;
+  animation-timing-function:ease-in;
+  animation-delay: 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+/*SES*/
+.container2{
+  height:auto;
+  width: auto;
+}
+.headline{
+  color:white ;
+  font-size: 10vw;
+  line-height: 10vw;
+  font-weight: bold;
+  font-family:'Arial', sans-serif;
+  text-align:right;
+  margin-top: 2vw;
+  letter-spacing: 2px;
+  margin-right: 7%;
+  background-image:url("images/bg1.png");
+  background-position:bottom;
+  background-size: 90%, 1500px;
+  color: transparent;
+  -webkit-background-clip:text;
+}
+h4{
+  margin-top:-6vw;
+  margin-left:10vw;
+  font-size: 1vw;
+  font-family:'Arial', sans-serif;
+  font-weight: lighter;
+  font-style: normal;
+  color: gray;
+}
+.box_ema{
+  height:10vw;
+  width:10vw;
+  margin-top:-0.5vw;
+  margin-left:8vw;
+  display:inline-block;
+  background-image:url("images/ema_logo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+.box_pl{
+  height:10vw;
+  width:10vw;
+  margin-top:-0.5vw;
+  display:inline-block;
+  background-image:url("images/pl_logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+}
+/*SES-Animation*/
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+    letter-spacing: 3px;
+  }
+  25% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+    letter-spacing: 3px;
+  }
+  50% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+    letter-spacing: 3px;
+  }
+  75% {
+    opacity: 0;
+    transform: translate3d(-50%, 0, 0);
+    letter-spacing: 3px;
+  }
+  95% {
+    opacity: 0;
+    transform: translate3d(-50%, 0, 0);
+    letter-spacing: 3px;
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    letter-spacing: normal;
+  }
+}
+.animate-slide-right {
+  animation-name: slideRight;
+  animation-duration: 2s;
+  animation-timing-function:linear;
+  animation-delay: 0s;
+  animation-direction:normal;
+  animation-iteration-count:none;
+  animation-fill-mode:backwards;
+}
+
+/*****3RD PAGE*****/
+.sesPlt{
+  height: auto;
+  width: auto;
+}
+h5{
+  color:white ;
+  font-size: 10vw;
+  line-height: 10vw;
+  font-weight: bold;
+  font-family:'Arial', sans-serif;
+  text-align:right;
+  margin-top: 20.5vw;
+  letter-spacing: 2px;
+  margin-right: 7%;
+  background-image:url("images/bg1.png");
+  background-position:bottom;
+  background-size: 90%, 1500px;
+  color: transparent;
+  -webkit-background-clip:text;
+}
+/*SES-Animation*/
+@keyframes upperRight {
+  0% {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+    font-size: 10vw;
+    line-height: 10vw;
+}
+100% {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+  font-size: 2vw;
+  line-height:2vw;
+  background-image:url("images/bg1.png");
+  background-position:top;
+  background-size: 100%, 200px;
+  color: transparent;
+  -webkit-background-clip:text;
+  margin: 2vw;
+  }
+}
+.animate-upperRight {
+  animation-name: upperRight;
+  animation-duration: 1s;
+  animation-timing-function:linear;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-iteration-count:none;
+  animation-fill-mode: forwards;
+}
+h3{
+  font-size: 3.5vw;
+  font-family:'Arial', sans-serif;
+  font-weight:bold;
+  line-height: 3vw;
+  text-align:center;
+  color:#3F3FA5;
+  margin-top: 10%;
+
+}
+h3:hover{
+  color:grey;
+}
+@keyframes center_PLt {
+  0% {
+    opacity: 0;
+    transform: translate3d(0,0,0);
+    font-size: 3.5vw;
+    line-height: 3vw;
+    color: white;
+}
+25% {
+  opacity: 0;
+  transform: translate3d(0,0,0);
+  font-size: 3.5vw;
+  line-height: 3vw;
+  color: white;
+}
+50% {
+  opacity: 0;
+  transform: translate3d(0,0,0);
+  font-size: 3.5vw;
+  line-height: 3vw;
+  color: white;
+}
+75% {
+  opacity: 0;
+  transform: translate3d(0,0,0);
+  font-size: 3.5vw;
+  line-height: 3vw;
+  color: white;
+}
+100% {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+  font-size: 3.5vw;
+  line-height: 3vw;
+  }
+}
+.animate-center {
+  animation-name: center_PLt;
+  animation-duration: 2s;
+  animation-timing-function:ease-in;
+  animation-delay: 0s;
+  animation-direction:alternate;
+  animation-iteration-count:1;
+  animation-fill-mode:backwards;
+}
+.box{
+  border-left: 4.5px solid #7ecede ;
+  border-bottom: 4.5px solid #7ecede ;
+  border-bottom-left-radius: 10px;
+  height:2.5vw;
+  width: 90vw;
+  margin-left: 5vw;
+  z-index: 1;
+}
+.organised{
+  margin-top:-6vw;
+  margin-left:10vw;
+  font-size: 1vw;
+  font-family:'Arial', sans-serif;
+  font-weight: lighter;
+  font-style: normal;
+  color: gray;
+}
+.box_ema_1{
+  height:10vw;
+  width:10vw;
+  margin-top:-0.5vw;
+  margin-left:8vw;
+  display:inline-block;
+  background-image:url("images/ema_logo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+@keyframes switchRight {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(75vw, 0, 0);
+  }
+}
+.animate-switchRight {
+  animation-name: switchRight;
+  animation-duration: 1s;
+  animation-timing-function:linear;
+  animation-delay: 3s;
+  animation-direction:normal;
+  animation-iteration-count:none;
+  animation-fill-mode:forwards;
+}
+.box_pl_1{
+  height:10vw;
+  width:10vw;
+  margin-top:-0.5vw;
+  display:inline-block;
+  background-image:url("images/pl_logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+}
+@keyframes switchLeft {
+  0% {
+    opacity: 1;
+    transform: translate3d(0,0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(-10vw, 0, 0);
+  }
+}
+.animate-switchLeft {
+  animation-name: switchLeft;
+  animation-duration: 1s;
+  animation-timing-function:linear;
+  animation-delay: 3s;
+  animation-direction:normal;
+  animation-iteration-count:none;
+  animation-fill-mode:forwards;
+}
+
+/*.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}*/
