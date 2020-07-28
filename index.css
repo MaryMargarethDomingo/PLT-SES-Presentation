@@ -88,7 +88,7 @@ viewport{
   height:auto;
   width: auto;
 }
-.headline{
+.headlineSES{
   color:white ;
   font-size: 10vw;
   line-height: 10vw;
@@ -421,7 +421,7 @@ hr{
   margin-top:-4.4vw;
 }
 /*OVERVIEW OF GLOBAL LANDSCAPE*/
-.left-green{
+.gl-left-green{
   position: absolute;
   z-index: 2;
   margin-top: 0.2vw;
@@ -433,7 +433,7 @@ hr{
   font-weight: bold;
   font-family:'Arial', sans-serif;
 }
-.green{
+.gl-middle{
   position: absolute;
   z-index:2;
   border-left: 5.5px solid #35B955;
@@ -441,7 +441,7 @@ hr{
   margin-top:-1.2vw;
   margin-left:49.2vw;
 }
-.round-green{
+.gl-round{
   position:absolute;
   z-index:2;
   width: 3.7vw;
@@ -452,7 +452,7 @@ hr{
   margin-left: 45.6vw;
   margin-top: 0.5vw;
 }
-.right-green{
+.gl-right-green{
   position: absolute;
   z-index: 2;
   margin-top: 1.5vw;
@@ -464,9 +464,8 @@ hr{
   font-family:'Arial', sans-serif;
 
 }
-
-.gelt-grow:hover {
-transform: scale(2);
+.gl-right-grow:hover {
+transform: scale(1.5);
 }.hr-green{
   position: absolute;
   z-index:-2;
@@ -493,7 +492,7 @@ transform: scale(2);
   }
 }
 /*OVERVIEW OF LOCAL LANDSCAPE*/
-.left-pink{
+.ll-left-pink{
   position: absolute;
   z-index: 2;
   margin-top: 15.8vw;
@@ -505,7 +504,7 @@ transform: scale(2);
   font-weight: bold;
   font-family:'Arial', sans-serif;
 }
-.pink{
+.ll-middle{
   position: absolute;
   z-index:2;
   border-left: 5.5px solid #E12CAB;
@@ -513,7 +512,7 @@ transform: scale(2);
   margin-top:10.5vw;
   margin-left:49.2vw;
 }
-.round-pink{
+.ll-round{
   position:absolute;
   z-index:2;
   width: 3.7vw;
@@ -524,7 +523,7 @@ transform: scale(2);
   margin-left: 45.6vw;
   margin-top: 16vw;
 }
-.right-pink{
+.ll-right-pink{
   position: absolute;
   z-index: 2;
   margin-top: 10vw;
@@ -543,7 +542,7 @@ hr.hr-pink{
   margin-left:-1.4vw;
 }
 /*LOCAL INITIATIVE ON R&D AND TALENT ATTRACTION*/
-.left-blue{
+.li-left-blue{
   position: absolute;
   z-index: 2;
   margin-top: 33vw;
@@ -555,7 +554,7 @@ hr.hr-pink{
   font-weight: bold;
   font-family:'Arial', sans-serif;
 }
-.blue{
+.li-middle{
   position: absolute;
   z-index:2;
   border-left: 5.5px solid #59CFEE;
@@ -563,7 +562,7 @@ hr.hr-pink{
   margin-top:32vw;
   margin-left:49.2vw;
 }
-.round-blue{
+.li-round{
   position:absolute;
   z-index:2;
   width: 3.7vw;
@@ -574,7 +573,7 @@ hr.hr-pink{
   margin-left: 45.6vw;
   margin-top: 33.6vw;
 }
-.right-blue{
+.li-right-blue{
   position: absolute;
   z-index: 2;
   margin-top: 32vw;
