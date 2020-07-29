@@ -477,14 +477,14 @@ hr{
   z-index:2;
   width: 3.7vw;
   height: 7vw;
-  border-bottom-left-radius:50vw;
-  border-top-left-radius:50vw;
+  border-bottom-right-radius:50vw;
+  border-top-right-radius:50vw;
   background: #35B955;
-  margin-left: 45.6vw;
+  margin-left: 45.5vw;
   margin-top: 0.5vw;
 }
 .animate-green-round {
-  animation-name: growgreen;
+  animation-name: rotategreen;
   animation-duration: 1s;
   animation-timing-function:linear;
   animation-delay: 0s;
@@ -492,15 +492,22 @@ hr{
   animation-iteration-count:none;
   animation-fill-mode:forwards;
 }
-@keyframes growgreen {
+@keyframes rotategreen {
   0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
     opacity: 0;
   }
   100% {
     opacity: 1;
+    transform:rotateY(180deg);
   }
 }
-.gl-right-green{
+.gl-Global{
   position: absolute;
   z-index: 2;
   margin-top: 1.5vw;
@@ -510,23 +517,13 @@ hr{
   font-size:1.5vw;
   font-weight: lighter;
   font-family:'Arial', sans-serif;
+}
 
-}
-.hr-green{
-  position: absolute;
-  width: 2vw;
-  margin-top: -1.5vw;
-  margin-left:-1.4vw;
-  border: 1px solid black;
-}
-.gl-right-green:hover{
+.gl-Global:hover{
   font-size: 2vw;
   top:5vw;
-  border-bottom:
+  transition-duration: 0.5s;
 }
-
-/*ANIMATION OVERVIEW OF GLOBAL LANDSCAPE*/
-
 /*OVERVIEW OF LOCAL LANDSCAPE*/
 .ll-left-pink{
   position: absolute;
@@ -572,14 +569,14 @@ hr{
   z-index:2;
   width: 3.7vw;
   height: 7vw;
-  border-bottom-left-radius:50vw;
-  border-top-left-radius:50vw;
+  border-bottom-right-radius:50vw;
+  border-top-right-radius:50vw;
   background: #E12CAB;
-  margin-left: 45.6vw;
+  margin-left: 45.5vw;
   margin-top: 16vw;
 }
 .animate-pink-round {
-  animation-name: growpink;
+  animation-name: rotatepink;
   animation-duration: 1s;
   animation-timing-function:linear;
   animation-delay: 0s;
@@ -587,18 +584,25 @@ hr{
   animation-iteration-count:none;
   animation-fill-mode:forwards;
 }
-@keyframes growpink {
+@keyframes rotatepink {
   0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
     opacity: 0;
   }
   100% {
     opacity: 1;
+    transform:rotateY(180deg);
   }
 }
-.ll-right-pink{
+.ll-History{
   position: absolute;
   z-index: 2;
-  margin-top: 10vw;
+  margin-top: 11.5vw;
   margin-left:51vw;
   color:#6D27B2;
   text-align:left;
@@ -606,13 +610,92 @@ hr{
   font-weight: lighter;
   font-family:'Arial', sans-serif;
 }
-hr.hr-pink{
-  position: absolute;
-  z-index:-2;
-  width: 2vw;
-  margin-top: -1.5vw;
-  margin-left:-1.4vw;
+.ll-History:hover{
+  font-size: 2vw;
+  top:5vw;
+  transition:all 0.5s linear;
 }
+.ll-Electricity{
+  position: absolute;
+  z-index: 2;
+  margin-top: 14.5vw;
+  margin-left:51vw;
+  color:#6D27B2;
+  text-align:left;
+  font-size:1.5vw;
+  font-weight: lighter;
+  font-family:'Arial', sans-serif;
+}
+.ll-Electricity:hover{
+  font-size: 2vw;
+  top:5vw;
+  transition-duration: 0.5s;
+}
+.ll-Energy{
+  position: absolute;
+  z-index: 2;
+  margin-top: 17.5vw;
+  margin-left:51vw;
+  color:#6D27B2;
+  text-align:left;
+  font-size:1.5vw;
+  font-weight: lighter;
+  font-family:'Arial', sans-serif;
+}
+.ll-Energy:hover{
+  font-size: 2vw;
+  top:5vw;
+  transition-duration: 0.5s;
+}
+.ll-Gas{
+  position: absolute;
+  z-index: 2;
+  margin-top: 20.5vw;
+  margin-left:51vw;
+  color:#6D27B2;
+  text-align:left;
+  font-size:1.5vw;
+  font-weight: lighter;
+  font-family:'Arial', sans-serif;
+}
+.ll-Gas:hover{
+  font-size: 2vw;
+  top:5vw;
+  transition-duration: 0.5s;
+}
+.ll-Switches{
+  position: absolute;
+  z-index: 2;
+  margin-top: 23.5vw;
+  margin-left:51vw;
+  color:#6D27B2;
+  text-align:left;
+  font-size:1.5vw;
+  font-weight: lighter;
+  font-family:'Arial', sans-serif;
+}
+.ll-Switches:hover{
+  font-size: 2vw;
+  top:5vw;
+  transition-duration: 0.5s;
+}
+.ll-EnergyT{
+  position: absolute;
+  z-index: 2;
+  margin-top: 26.5vw;
+  margin-left:51vw;
+  color:#6D27B2;
+  text-align:left;
+  font-size:1.5vw;
+  font-weight: lighter;
+  font-family:'Arial', sans-serif;
+}
+.ll-EnergyT:hover{
+  font-size: 2vw;
+  top:5vw;
+  transition-duration: 0.5s;
+}
+
 /*LOCAL INITIATIVE ON R&D AND TALENT ATTRACTION*/
 .li-left-blue{
   position: absolute;
@@ -658,14 +741,14 @@ hr.hr-pink{
   z-index:2;
   width: 3.7vw;
   height: 7vw;
-  border-bottom-left-radius:50vw;
-  border-top-left-radius:50vw;
+  border-bottom-right-radius:50vw;
+  border-top-right-radius:50vw;
   background: #59CFEE;
-  margin-left: 45.6vw;
+  margin-left: 45.5vw;
   margin-top: 33.6vw;
 }
 .animate-blue-round {
-  animation-name: growblue;
+  animation-name: rotateblue;
   animation-duration: 1s;
   animation-timing-function:linear;
   animation-delay: 0s;
@@ -673,15 +756,23 @@ hr.hr-pink{
   animation-iteration-count:none;
   animation-fill-mode:forwards;
 }
-@keyframes growblue {
+@keyframes rotateblue {
   0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
     opacity: 0;
   }
   100% {
     opacity: 1;
+    transform:rotateY(180deg);
   }
 }
-.li-right-blue{
+
+.li-Innovative{
   position: absolute;
   z-index: 2;
   margin-top: 32vw;
@@ -692,12 +783,42 @@ hr.hr-pink{
   font-weight: lighter;
   font-family:'Arial', sans-serif;
 }
-hr.hr-blue{
+.li-Innovative:hover{
+  font-size: 2vw;
+  top:5vw;
+  transition-duration: 0.5s;
+}
+.li-Talent{
   position: absolute;
-  z-index:-2;
-  width: 2vw;
-  margin-top: -1.5vw;
-  margin-left:-1.4vw;
+  z-index: 2;
+  margin-top: 35vw;
+  margin-left:51vw;
+  color:#6D27B2;
+  text-align:left;
+  font-size:1.5vw;
+  font-weight: lighter;
+  font-family:'Arial', sans-serif;
+}
+.li-Talent:hover{
+  font-size: 2vw;
+  top:5vw;
+  transition-duration: 0.5s;
+}
+.li-Vibracy{
+  position: absolute;
+  z-index: 2;
+  margin-top: 38vw;
+  margin-left:51vw;
+  color:#6D27B2;
+  text-align:left;
+  font-size:1.5vw;
+  font-weight: lighter;
+  font-family:'Arial', sans-serif;
+}
+.li-Vibracy:hover{
+  font-size: 2vw;
+  top:5vw;
+  transition-duration: 0.5s;
 }
 
 /*.loader {
