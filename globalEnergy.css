@@ -34,8 +34,8 @@ hr{
   font-family: 'Arial', sans-serif;
   font-size:2vw;
   font-weight: bold;
-  color:#7766A9;
-  line-height: 1.8vw;
+  color:#4759AA;
+  line-height: 1.7vw;
   text-align: left;
   text-transform: uppercase;
 }
@@ -56,18 +56,46 @@ hr{
   color: transparent;
   -webkit-background-clip:text;
 }
-
+.homeButton{
+  position: absolute;
+  z-index: 2;
+  margin-top: 22.2vw;
+  margin-left: 2.5vw;
+  border: 1.5vw solid #50CA5B;
+  border-top-right-radius: 0.5vw;
+  border-bottom-right-radius: 0.5vw;
+}
+.home{
+  position: absolute;
+  height: 1.5vw;
+  width: 1.5vw;
+  margin-top: -0.8vw;
+  margin-left: -0.8vw;
+}
+.next{
+  position: absolute;
+  z-index: 2;
+  margin-top: 25.5vw;
+  margin-left: 2.5vw;
+  border: 1.5vw solid #DD2296;
+  border-top-right-radius: 0.5vw;
+  border-bottom-right-radius: 0.5vw;
+}
 .description{
   position: absolute;
   z-index: 2;
-  width: 15.9vw;
+  width: 14.2vw;
   margin-top:8vw;
-  margin-left:5vw;
+  margin-left:6.5vw;
   font-family:'Arial', sans-serif;
-  font-size: 2vw;
+  font-size: 1.8vw;
   font-weight:normal;
-  color:#7766A9;
-  line-height: 2vw;
+  color:#7435B8;
+  line-height: 1.8vw;
   text-align: right;
-
+}
+.left-line{
+  position: absolute;
+  z-index: 2;
+  bor
 }
